@@ -4,6 +4,8 @@
 variable "gcp_project" {
   description = "The name of the GCP project to use"
   type        = string
+  default     = "crisp-service"
+
 }
 
 // ----------------------------------------------------------------------------
@@ -12,7 +14,7 @@ variable "gcp_project" {
 variable "cluster_name" {
   description = "Name of the Kubernetes cluster to create"
   type        = string
-  default     = ""
+  default     = "crisp-non-prod"
 }
 
 variable "zone" {
